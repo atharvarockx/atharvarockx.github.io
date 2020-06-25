@@ -42,7 +42,7 @@
 	<!-- Theme style  -->
 	<link rel="stylesheet" href="css/style.css">
 	<link rel='manifest' href='/manifest.json'>
-
+	
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
 	<!-- FOR IE9 below -->
@@ -560,6 +560,13 @@
 	</div><!-- end:container-wrap -->
 	</div><!-- end:colorlib-page -->
 
+	<!-- Sevice Worker Offline Page -->
+	<script type="module">
+		import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
+		const el = document.createElement('pwa-update');
+		document.body.appendChild(el);
+	</script>
+	
 	<!-- jQuery -->
 	<script src="js/jquery.min.js"></script>
 	<!-- jQuery Easing -->
